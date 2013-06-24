@@ -1,0 +1,134 @@
+* { margin:0; padding:0; }
+
+@font-face {
+    font-family: 'ds-digitalnormal';
+    src: url('../fonts/ds-digi-webfont.eot');
+    src: url('../fonts/ds-digi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ds-digi-webfont.woff') format('woff'),
+         url('../fonts/ds-digi-webfont.ttf') format('truetype'),
+         url('../fonts/ds-digi-webfont.svg#ds-digitalnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	background-color: grey;
+	margin: 0;
+	width:100%;
+	height:100%;
+	display:block;
+}
+
+#canvas_container{
+    
+    margin:0 auto;
+	border: 2px solid #fff;  
+	display:block;
+	vertical-align: top;
+	height: 640px;
+	width: 960px;
+	position: relative;
+	top:10px;
+	
+}
+
+#textBox{
+	
+	background-color: black;
+    bottom: 0;
+    height: 6%;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    display:none;
+}
+
+#mainText{
+	
+	bottom: 9px;
+    color: white;
+    position: absolute;
+    z-index: 10;
+    
+}
+
+p{
+
+	color: white;
+    font-family: arial;
+    font-size: 14px;
+    text-align: center;
+    width: 960px;
+	
+}
+
+#field0 input,#field1 input,#field2 input{
+
+	color:#ee5992;
+	width:27px;
+	height:46px;
+	transform: rotate(340deg);
+	-ms-transform: rotate(340deg); /* IE 9 */
+	-webkit-transform: rotate(340deg); /* Safari and Chrome */
+	font-family: arial;
+	font-size:40px;
+	text-align: center;
+
+}
+
+#field0{
+	
+	left: 337px;
+    position: absolute;
+    top: 205px;
+    display:none;
+    
+}
+
+#field1{
+
+	left: 367px;
+    position: absolute;
+    top: 194px;
+    display:none;
+}
+
+#field2{
+	
+	left: 397px;
+    position: absolute;
+    top: 183px;
+    display:none;
+}
+
+#currentTime{
+	
+	color: #e72629;
+    font-family: 'ds-digitalnormal';
+    font-size: 70px;
+    left: 72px;
+    position: absolute;
+    top: 116px;
+	display:none;
+}
+
+#endTime{
+	
+	color: grey;
+    font-size: 36px;
+    font-weight: bold;
+    left: 316px;
+    position: absolute;
+    text-align: center;
+    top: 165px;
+    width: 340px;
+	display:none;
+	opacity:0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
